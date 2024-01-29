@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quality-Menswear</title>
-    <style>
-        body{
-            height: 100vh;
-            background-color:rgb(255, 255, 255);
-            display: grid;
-            place-items: center;
-            div{
-                background-color:aliceblue;
-                border-radius: 1vmin;
-                padding: 5%;
-                box-shadow: 2px 2px 8px 1px rgb(133, 130, 130);
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/public/sass/index.css">
 </head>
 <body>
     <div>
-        <h1>Quality-Menswear</h1>
-        <hr>
-        <p>site hosting check-up</p>
+        <img src="./th.jpeg" id="imgx" alt="">
+        <label for="in-tag"><input onchange="upLoad(event)" type="file" accept="image/png , image/jpeg"></label>
     </div>
-    <script src="/index.js" ></script>
+    <script type="module"  >
+        // Import the functions you need from the SDKs you need
+import  {initializeApp}  from "firebase/app";
+//import 'firebase/compat/storage';
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC-yCkaFvGjwlhpcCC-b1UEQLCbk9mWbZE",
+  authDomain: "quality-menswear.firebaseapp.com",
+  projectId: "quality-menswear",
+  storageBucket: "quality-menswear.appspot.com",
+  messagingSenderId: "569606697426",
+  appId: "1:569606697426:web:23dc04741a01d85be3580b",
+  storageBucket : 'gs://quality-menswear.appspot.com'
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+        console.log('kk');
+    </script>
+    
+    <script src="/public/x.js" ></script>
 </body>
 </html>

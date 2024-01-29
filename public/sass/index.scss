@@ -1,0 +1,24 @@
+body{
+    height: 100vh;
+    background-color:rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    div{
+        background-color:aliceblue;
+        border-radius: 1vmin;
+        padding: 5%;
+        height: 30vh;
+        box-shadow: 2px 2px 8px 1px rgb(133, 130, 130);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            width: 50%;
+            background-position: center;
+            background-size:auto;
+        }
+    }
+}
